@@ -12,14 +12,10 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = ".//*[@title='Shop']")
-    private WebElement shopCategory;
 
-    @FindBy(xpath = ".//*[@title='Sale']")
-    private WebElement saleCategory;
-
-    @FindBy(xpath = ".//*[contains(text(),'Accept all')][1]")
-    private WebElement acceptCookies;
+    private static final String ACCEPT_COOKIES = ".//*[contains(text(),'Accept all')][1]";
+    private static final String SALE_CATEGORY = ".//*[@title='Sale']";
+    private static final String SHOP_CATEGORY = ".//*[@title='Shop']";
 
 
     public boolean isHomePageDisplayed() {
@@ -33,15 +29,15 @@ public class HomePage extends BasePage {
                 webDriverWait.pollingEvery(DurationUtil.SHORT, TimeUnit.MILLISECONDS)
                         .withTimeout(DurationUtil.LONG,TimeUnit.SECONDS)
                         .ignoring(WebDriverException.class)
-                        .until(ExpectedConditions.elementToBeClickable(shopCategory));
-                shopCategory.click();
+                        .until(ExpectedConditions.elementToBeClickable(getWebElement(SHOP_CATEGORY)));
+                getWebElement(SHOP_CATEGORY).click();
                 break;
             case "sale":
                 webDriverWait.pollingEvery(DurationUtil.SHORT, TimeUnit.MILLISECONDS)
                         .withTimeout(DurationUtil.LONG,TimeUnit.SECONDS)
                         .ignoring(WebDriverException.class)
-                        .until(ExpectedConditions.elementToBeClickable(saleCategory));
-                saleCategory.click();
+                        .until(ExpectedConditions.elementToBeClickable(getWebElement(SALE_CATEGORY)));
+                getWebElement(SALE_CATEGORY).click();
                 break;
             default:
                 throw new Exception("No such category found " + category);
@@ -49,6 +45,6 @@ public class HomePage extends BasePage {
     }
 
     public void acceptCookies() {
-        acceptCookies.click();
+        getWebElement(ACCEPT_COOKIES).click();
     }
 }

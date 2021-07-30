@@ -9,5 +9,8 @@
         <module name="test_script_demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test_script_demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

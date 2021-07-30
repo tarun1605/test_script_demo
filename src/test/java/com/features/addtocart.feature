@@ -10,11 +10,13 @@ Feature: Customer is able to add least priced product to cart from wishlist
     And the customer has added 4 products to wishlist
     And the customer has navigate to wishlist page
     And the customer can see all the added products
-    And the customer can search and add the lowest product to cart
+    And the customer can find lowest product price
+    And the customer can find lowest product name
+    And the customer can add the lowest product to cart
     When the customer has navigated to cart
     Then the customer should be able to see selected product in cart
     Examples:
       | Browser Name |
       | Chrome       |
-      | Firefox      |
-      | Edge         |
+#      | Firefox      |
+#      | Edge         |

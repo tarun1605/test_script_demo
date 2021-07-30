@@ -1,6 +1,7 @@
 package com.pages;
 
 import com.constants.Constants;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -55,5 +56,9 @@ public class BasePage {
 
     public String getPageTitle() {
         return driver.getTitle();
+    }
+
+    public WebElement getWebElement(String xPath) {
+        return driver.findElement(By.xpath(xPath));
     }
 }

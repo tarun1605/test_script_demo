@@ -1,21 +1,20 @@
 package com.pages;
 
 import com.constants.Constants;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CartPage extends BasePage{
 
-    WishlistPage wishlistPage = new WishlistPage();
-
-    @FindBy(xpath = "(.//*[contains(@class,'la la-shopping-bag')])[2]")
-    private WebElement shoppingCart;
-
-    @FindBy(xpath = ".//*[contains(@class,'product-name')]/a")
-    private WebElement productName;
+    private static final String SHOPPING_CART = "(.//*[contains(@class,'la la-shopping-bag')])[1]";
+    private static final String PRODUCT_NAME = ".//*[contains(@class,'product-name')]/a";
+    private static final String PRODUCT_ADDED = ".//*[contains(@class,'woocommerce-message')]";
 
     public void clickShoppingCart() {
-        shoppingCart.click();
+        getWebElement(SHOPPING_CART).click();
     }
 
     public boolean isShoppingCartPageDisplayed() {
@@ -23,10 +22,15 @@ public class CartPage extends BasePage{
     }
 
     public String getAddedProductName() {
-        return productName.getText();
+        return getWebElement(PRODUCT_NAME).getText();
     }
 
     public boolean verifyAddedProductInCart() {
-        return getAddedProductName().equalsIgnoreCase(wishlistPage.productName);
+        return getAddedProductName().equalsIgnoreCase(WishlistPage.lowestProductName);
+    }
+
+    public void waitUntilProductAddedToCart() {
+        WebDriverWait webDriverWait = new WebDriverWait(driver, 5);
+        webDriverWait.until(ExpectedConditions.textToBePresentInElement(By.xpath(PRODUCT_ADDED),Constants.CART_SUCCESSFUL_MESSAGE));
     }
 }

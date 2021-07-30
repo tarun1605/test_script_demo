@@ -20,7 +20,7 @@ public class HomePageSteps {
         Assert.assertTrue(homePage.isHomePageDisplayed(),"Home page isn't displayed properly");
     }
 
-    @And("the customer has navigated to (.*) section")
+    @And("^the customer has navigated to (.*) section$")
     public void theCustomerHasNavigatedToShopSection(String category) throws Exception {
         homePage.selectShopCategory(category);
         Assert.assertTrue(categoryPage.isShopPageDisplayed(),"Category page isn't displayed properly");
