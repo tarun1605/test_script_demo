@@ -22,9 +22,13 @@ mvn clean test -Dcucumber.filter.tags="@test" -Ddataproviderthreadcount=3
 Improvements:
 Better synchronization can be implemented
 Necessary logging to put in place
-Efficient error handling
 Scope for refining page factory
 To implement reporting mechanism using Allure/Extent reports etc
+
+Cucumber Report:
+![img.png](img.png)
+
+![img_1.png](img_1.png)
 
 
 

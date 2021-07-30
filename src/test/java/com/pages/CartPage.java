@@ -2,12 +2,10 @@ package com.pages;
 
 import com.constants.Constants;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CartPage extends BasePage{
+public class CartPage extends BasePage {
 
     private static final String SHOPPING_CART = "(.//*[contains(@class,'la la-shopping-bag')])[1]";
     private static final String PRODUCT_NAME = ".//*[contains(@class,'product-name')]/a";
@@ -31,6 +29,6 @@ public class CartPage extends BasePage{
 
     public void waitUntilProductAddedToCart() {
         WebDriverWait webDriverWait = new WebDriverWait(driver, 5);
-        webDriverWait.until(ExpectedConditions.textToBePresentInElement(By.xpath(PRODUCT_ADDED),Constants.CART_SUCCESSFUL_MESSAGE));
+        webDriverWait.until(ExpectedConditions.textToBePresentInElement(By.xpath(PRODUCT_ADDED), Constants.CART_SUCCESSFUL_MESSAGE));
     }
 }

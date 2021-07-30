@@ -3,8 +3,6 @@ package com.pages;
 import com.constants.Constants;
 import com.utilities.DurationUtil;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,18 +21,18 @@ public class HomePage extends BasePage {
     }
 
     public void selectShopCategory(String category) throws Exception {
-        WebDriverWait webDriverWait = new WebDriverWait(driver,20);
+        WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
         switch (category) {
             case "shop":
                 webDriverWait.pollingEvery(DurationUtil.SHORT, TimeUnit.MILLISECONDS)
-                        .withTimeout(DurationUtil.LONG,TimeUnit.SECONDS)
+                        .withTimeout(DurationUtil.LONG, TimeUnit.SECONDS)
                         .ignoring(WebDriverException.class)
                         .until(ExpectedConditions.elementToBeClickable(getWebElement(SHOP_CATEGORY)));
                 getWebElement(SHOP_CATEGORY).click();
                 break;
             case "sale":
                 webDriverWait.pollingEvery(DurationUtil.SHORT, TimeUnit.MILLISECONDS)
-                        .withTimeout(DurationUtil.LONG,TimeUnit.SECONDS)
+                        .withTimeout(DurationUtil.LONG, TimeUnit.SECONDS)
                         .ignoring(WebDriverException.class)
                         .until(ExpectedConditions.elementToBeClickable(getWebElement(SALE_CATEGORY)));
                 getWebElement(SALE_CATEGORY).click();

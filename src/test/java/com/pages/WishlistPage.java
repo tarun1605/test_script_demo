@@ -3,7 +3,6 @@ package com.pages;
 import com.constants.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.ArrayList;
 import java.util.Collections;

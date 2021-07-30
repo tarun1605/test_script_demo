@@ -15,8 +15,9 @@ Feature: Customer is able to add least priced product to cart from wishlist
     And the customer can add the lowest product to cart
     When the customer has navigated to cart
     Then the customer should be able to see selected product in cart
+    And the customer exit the application
     Examples:
       | Browser Name |
       | Chrome       |
-#      | Firefox      |
-#      | Edge         |
+      | Firefox      |
+      | Edge         |
