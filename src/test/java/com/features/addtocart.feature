@@ -16,5 +16,5 @@ Feature: Customer is able to add least priced product to cart from wishlist
     Examples:
       | Browser Name |
       | Chrome       |
-#      | Firefox      |
-#      | Edge         |
+      | Firefox      |
+      | Edge         |
