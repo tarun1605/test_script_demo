@@ -16,7 +16,7 @@ Commands to execute the test
 # For single instance
 mvn clean test -Dcucumber.filter.tags="@test"
 
-#For parallel instances
+# For parallel instances*
 mvn clean test -Dcucumber.filter.tags="@test" -Ddataproviderthreadcount=3
 
 Improvements:
