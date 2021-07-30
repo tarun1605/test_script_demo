@@ -1,0 +1,134 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-30T06:12:21.545Z",
+        "line": 18,
+        "name": "Customer should be able to add product from wishlist to cart",
+        "description": "",
+        "id": "customer-is-able-to-add-least-priced-product-to-cart-from-wishlist;customer-should-be-able-to-add-product-from-wishlist-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebElement.click()\" because \"this.acceptCookies\" is null\r\n\tat com.pages.HomePage.acceptCookies(HomePage.java:51)\r\n\tat com.steps.HomePageSteps.the_customer_has_navigated_to_script_demo_page(HomePageSteps.java:19)\r\n\tat ✽.the customer has navigated to Test script demo page in Chrome(file:///C:/Users/tarun/IdeaProjects/test_script_demo/src/test/java/com/features/addtocart.feature:8)\r\n",
+              "duration": 3706192000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the customer has navigated to Test script demo page in Chrome",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chrome",
+                  "offset": 55
+                }
+              ],
+              "location": "com.steps.HomePageSteps.the_customer_has_navigated_to_script_demo_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the customer has navigated to shop section",
+            "match": {
+              "location": "com.steps.HomePageSteps.theCustomerHasNavigatedToShopSection(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the customer has added 4 products to wishlist",
+            "match": {
+              "location": "com.steps.CategoryPageSteps.thecustomerhasadded4productstowishlist(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the customer has navigate to wishlist page",
+            "match": {
+              "location": "com.steps.WishlistPageSteps.the_customer_has_navigate_to_wishlist_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the customer can see all the added products",
+            "match": {
+              "location": "com.steps.WishlistPageSteps.theCustomerCanSeeAllTheAddedProducts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the customer can search and add the lowest product to cart",
+            "match": {
+              "location": "com.steps.WishlistPageSteps.theCustomerCanSearchAndAddTheLowestProductToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the customer has navigated to cart",
+            "match": {
+              "location": "com.steps.CartPageSteps.the_customer_has_navigated_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "the customer should be able to see selected product in cart",
+            "match": {
+              "location": "com.steps.CartPageSteps.theCustomerShouldBeAbleToSeeSelectedProductInCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Customer is able to add least priced product to cart from wishlist",
+    "description": "  As a customer - I want to select different products to wishlist\n  I want to add a lowest priced product from the wishlist to cart\n  I want to see whether the added product is in cart",
+    "id": "customer-is-able-to-add-least-priced-product-to-cart-from-wishlist",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/features/addtocart.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
