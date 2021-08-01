@@ -3,17 +3,28 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-07-30T19:44:27.696Z",
+        "start_timestamp": "2021-08-01T14:41:54.665Z",
         "line": 21,
         "name": "Customer should be able to add product from wishlist to cart",
         "description": "",
         "id": "customer-is-able-to-add-least-priced-product-to-cart-from-wishlist;customer-should-be-able-to-add-product-from-wishlist-to-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 202921600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.utilities.Hooks.afterTest()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3097692100,
+              "duration": 2400057400,
               "status": "passed"
             },
             "line": 8,
@@ -31,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 828284500,
+              "duration": 707608100,
               "status": "passed"
             },
             "line": 9,
@@ -49,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 4456432800,
+              "duration": 4353671100,
               "status": "passed"
             },
             "line": 10,
@@ -67,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 395430800,
+              "duration": 254088600,
               "status": "passed"
             },
             "line": 11,
@@ -79,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 76370200,
+              "duration": 60712800,
               "status": "passed"
             },
             "line": 12,
@@ -91,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 75702100,
+              "duration": 35831100,
               "status": "passed"
             },
             "line": 13,
@@ -109,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 23741600,
+              "duration": 31597200,
               "status": "passed"
             },
             "line": 14,
@@ -127,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 63562500,
+              "duration": 45685500,
               "status": "passed"
             },
             "line": 15,
@@ -139,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 545448200,
+              "duration": 459245100,
               "status": "passed"
             },
             "line": 16,
@@ -151,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 33400600,
+              "duration": 25716600,
               "status": "passed"
             },
             "line": 17,
@@ -160,374 +171,6 @@
               "location": "com.steps.CartPageSteps.theCustomerShouldBeAbleToSeeSelectedProductInCart()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 240673100,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the customer exit the application",
-            "match": {
-              "location": "com.steps.CartPageSteps.theCustomerExitTheApplication()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-07-30T19:44:37.570Z",
-        "line": 22,
-        "name": "Customer should be able to add product from wishlist to cart",
-        "description": "",
-        "id": "customer-is-able-to-add-least-priced-product-to-cart-from-wishlist;customer-should-be-able-to-add-product-from-wishlist-to-cart;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4675677800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the customer has navigated to Test script demo page in Firefox",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Firefox",
-                  "offset": 55
-                }
-              ],
-              "location": "com.steps.HomePageSteps.the_customer_has_navigated_to_script_demo_page(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 418106200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the customer has navigated to shop section",
-            "match": {
-              "arguments": [
-                {
-                  "val": "shop",
-                  "offset": 30
-                }
-              ],
-              "location": "com.steps.HomePageSteps.theCustomerHasNavigatedToShopSection(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5088379200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the customer has added 4 products to wishlist",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 23
-                }
-              ],
-              "location": "com.steps.CategoryPageSteps.thecustomerhasadded4productstowishlist(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 339403400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the customer has navigate to wishlist page",
-            "match": {
-              "location": "com.steps.WishlistPageSteps.the_customer_has_navigate_to_wishlist_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82448300,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the customer can see all the added products",
-            "match": {
-              "location": "com.steps.WishlistPageSteps.theCustomerCanSeeAllTheAddedProducts()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47212800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the customer can find lowest product price",
-            "match": {
-              "arguments": [
-                {
-                  "val": "price",
-                  "offset": 37
-                }
-              ],
-              "location": "com.steps.WishlistPageSteps.theCustomerCanFindLowestProductPrice(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16454500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the customer can find lowest product name",
-            "match": {
-              "arguments": [
-                {
-                  "val": "name",
-                  "offset": 37
-                }
-              ],
-              "location": "com.steps.WishlistPageSteps.theCustomerCanFindLowestProductPrice(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 261992600,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the customer can add the lowest product to cart",
-            "match": {
-              "location": "com.steps.WishlistPageSteps.theCustomerCanSearchAndAddTheLowestProductToCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 371614300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the customer has navigated to cart",
-            "match": {
-              "location": "com.steps.CartPageSteps.the_customer_has_navigated_to_cart()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 35565500,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the customer should be able to see selected product in cart",
-            "match": {
-              "location": "com.steps.CartPageSteps.theCustomerShouldBeAbleToSeeSelectedProductInCart()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 630561000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the customer exit the application",
-            "match": {
-              "location": "com.steps.CartPageSteps.theCustomerExitTheApplication()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-07-30T19:44:49.545Z",
-        "line": 23,
-        "name": "Customer should be able to add product from wishlist to cart",
-        "description": "",
-        "id": "customer-is-able-to-add-least-priced-product-to-cart-from-wishlist;customer-should-be-able-to-add-product-from-wishlist-to-cart;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2365868600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the customer has navigated to Test script demo page in Edge",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Edge",
-                  "offset": 55
-                }
-              ],
-              "location": "com.steps.HomePageSteps.the_customer_has_navigated_to_script_demo_page(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1542192400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the customer has navigated to shop section",
-            "match": {
-              "arguments": [
-                {
-                  "val": "shop",
-                  "offset": 30
-                }
-              ],
-              "location": "com.steps.HomePageSteps.theCustomerHasNavigatedToShopSection(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4458593200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the customer has added 4 products to wishlist",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 23
-                }
-              ],
-              "location": "com.steps.CategoryPageSteps.thecustomerhasadded4productstowishlist(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 451076400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the customer has navigate to wishlist page",
-            "match": {
-              "location": "com.steps.WishlistPageSteps.the_customer_has_navigate_to_wishlist_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 60649900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the customer can see all the added products",
-            "match": {
-              "location": "com.steps.WishlistPageSteps.theCustomerCanSeeAllTheAddedProducts()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 46470200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the customer can find lowest product price",
-            "match": {
-              "arguments": [
-                {
-                  "val": "price",
-                  "offset": 37
-                }
-              ],
-              "location": "com.steps.WishlistPageSteps.theCustomerCanFindLowestProductPrice(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24750500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the customer can find lowest product name",
-            "match": {
-              "arguments": [
-                {
-                  "val": "name",
-                  "offset": 37
-                }
-              ],
-              "location": "com.steps.WishlistPageSteps.theCustomerCanFindLowestProductPrice(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 58284300,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the customer can add the lowest product to cart",
-            "match": {
-              "location": "com.steps.WishlistPageSteps.theCustomerCanSearchAndAddTheLowestProductToCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 572333400,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the customer has navigated to cart",
-            "match": {
-              "location": "com.steps.CartPageSteps.the_customer_has_navigated_to_cart()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 27803200,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the customer should be able to see selected product in cart",
-            "match": {
-              "location": "com.steps.CartPageSteps.theCustomerShouldBeAbleToSeeSelectedProductInCart()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 157793400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the customer exit the application",
-            "match": {
-              "location": "com.steps.CartPageSteps.theCustomerExitTheApplication()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [

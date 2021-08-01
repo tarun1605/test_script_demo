@@ -48,5 +48,4 @@ public class BasePage {
     public WebElement getWebElement(String xPath) {
         return driver.findElement(By.xpath(xPath));
     }
-
 }
